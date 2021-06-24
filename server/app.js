@@ -1,3 +1,4 @@
+require("./db/config");
 const express = require("express"),
   app = express();
 
