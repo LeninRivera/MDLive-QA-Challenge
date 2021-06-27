@@ -1,7 +1,7 @@
 require("./db/config");
 const express = require("express"),
   app = express(),
-  appsRoute = require("./routes/apps");
+  appsRoute = require("./routes/myApps");
 
 //Parse incoming JSON into objects
 app.use(express.json());
