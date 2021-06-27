@@ -47,6 +47,7 @@ router.get("/:range", async (req, res) => {
         .select("-_id -__v")
         .limit(end === undefined ? max : Math.min(end, max));
 
+      console.log(pagination.length);
       //sorts pagination in ascending order
       pagination.sort((a, b) => {
         if (order === "asc") {

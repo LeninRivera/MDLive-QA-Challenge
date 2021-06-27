@@ -5,13 +5,16 @@ const express = require("express"),
 
 //Parse incoming JSON into objects
 app.use(express.json());
+app.use(express.static(__dirname + "/public"));
+
+app.set("views", __dirname + "/views");
+app.set();
+app.set("view engine", "ejs");
 
 app.use("/apps", appsRoute);
 
-//todo delete before final commit
-app.get("/test", (req, res) => {
-  console.log("test point is working");
-  res.status(200).send("Test point is working");
+app.get("/", (req, res) => {
+  res.status(200).render("home");
 });
 
 module.exports = app;

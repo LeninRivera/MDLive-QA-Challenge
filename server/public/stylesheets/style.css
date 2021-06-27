@@ -1,0 +1,27 @@
+body {
+  padding: 3.125rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f8ff;
+}
+
+h1,
+p {
+  margin-left: 1.875rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1.875rem;
+}
+
+.indent-0 {
+  margin-left: 2.5rem;
+}
+
+.indent-1 {
+  margin-left: 3.75rem;
+}
+
+.indent-2 {
+  margin-left: 4.375rem;
+}/*# sourceMappingURL=style.css.map */
