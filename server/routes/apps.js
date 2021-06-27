@@ -27,11 +27,13 @@ router.get("/:range", async (req, res) => {
   try {
     const data = JSON.parse(req.params.range);
     let by = data.by,
-      start = data.start || 1,
-      end = data.end,
+      start =
+        (data.by === "name" ? Number(data.start.slice(-3)) : data.start) || 1,
+      end = data.by === "name" ? Number(data.end.slice(-3)) : data.end,
       max = data.max || 50,
       order = data.order || "asc";
 
+    console.log(Math.min(end, max));
     const search = {};
     search[by] = { $gt: start - 1 };
 
