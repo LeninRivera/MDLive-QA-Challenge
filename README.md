@@ -10,6 +10,7 @@ Pagination is a technique frequently seen in HTTP API's to make working with lar
 - [Example End Points](#example-end-points)
 - [Testing](#testing)
 - [Technologies Used](#technologies-used)
+- [Deployed on Heroku](#deployed-on-heroku)
 
 ## Challenge
 
@@ -24,7 +25,7 @@ The challenge is to build a simple HTTP API endpoint that will perform paginatio
 ];
 ```
 
-When no "range" parameters are provided with a request, the endpoint should respond with an array according to default parameters. When the endpoint is requested with a `"range"`, it should modify its response to appropriately include only the items bounded by that range request.
+When no `"range"` parameters are provided with a request, the endpoint should respond with an array according to default parameters. When the endpoint is requested with a `"range"`, it should modify its response to appropriately include only the items bounded by that `"range"` request.
 
 ## Solution
 
@@ -82,3 +83,7 @@ Inside the `test.env` you need to change the MONGODB_URL, so that you can run yo
 - Jest
 - Supertest
 - Embedded JavaScript templates
+
+# Deployed on Heroku
+
+[https://lenin-rivera-mdlive-qa-challen.herokuapp.com/](https://lenin-rivera-mdlive-qa-challen.herokuapp.com/)
