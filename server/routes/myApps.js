@@ -20,7 +20,7 @@ router.get("/", async (req, res) => {
 
     res.status(200).json(pagination);
   } catch (err) {
-    console.log(err.message);
+    res.status(400).json(err.message);
   }
 });
 
@@ -60,7 +60,7 @@ router.get("/:range", async (req, res) => {
       res.status(200).json(pagination);
     }
   } catch (err) {
-    console.log(err.message);
+    res.status(400).json(err.message);
   }
 });
 
