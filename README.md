@@ -84,6 +84,6 @@ Inside the `test.env` you need to change the MONGODB_URL, so that you can run yo
 - Supertest
 - Embedded JavaScript templates
 
-# Deployed on Heroku
+## Deployed on Heroku
 
 [https://lenin-rivera-mdlive-qa-challen.herokuapp.com/](https://lenin-rivera-mdlive-qa-challen.herokuapp.com/)
